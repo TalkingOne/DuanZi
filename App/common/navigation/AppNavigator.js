@@ -14,6 +14,7 @@ import ShowPage from "../../main/Show/ShowPage";
 import MinePage from "../../main/Mine/MinePage";
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator'
+import DetailPage from "../../main/Home/DetailPage";
 const TabNav = TabNavigator(
     {
         HomePage:{
@@ -94,7 +95,8 @@ const TabNav = TabNavigator(
 )
 const StackNav = StackNavigator(
     {
-        Tab:{screen:TabNav}
+        Tab:{screen:TabNav},
+        DetailPage:{screen:DetailPage}
     },
     {
         initialRouteName:'Tab'

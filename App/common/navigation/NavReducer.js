@@ -4,13 +4,7 @@
  *  Date: 2018/1/29.
  *  Description:
  */
-import React, {Component} from 'react';
-import {
-    Platform,
-    StyleSheet,
-    Text,
-    View
-} from 'react-native';
+
 import StackNav from './AppNavigator';
 const NavReducer = (state,action)=>{
     let nextState;
